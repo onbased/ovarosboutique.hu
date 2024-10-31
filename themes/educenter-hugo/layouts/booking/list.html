@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="GET">
+        <form action="{{ site.Params.contact_form_action | safeURL }}" method="GET" target="_top">
           <!--<input type="text" class="form-control mb-3" id="name" name="name" placeholder="{{ i18n "your_name" }}">-->
           <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="{{ i18n "your_email" }}">
           <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="{{ i18n "subject" }}">
@@ -26,6 +26,12 @@
       </div>
     </div>
     <div class="row">
+      <div class="mt-5 col-lg-12">
+        {{ .Params.booking_alternatives | markdownify }}
+        <a href="{{ .Params.booking_alternatives_link }}">
+          <img src="{{ .Params.booking_alternatives_image | absURL }}">
+        </a>
+      </div>
       <div class="mt-5 col-lg-12">
         {{ .Params.Information | markdownify }}
       </div>

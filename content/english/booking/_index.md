@@ -5,12 +5,21 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Where you can retire. Where they could look inside. Where you can leave the city noise, rush, and stress behind for a few days. We wait."
+booking_alternatives: >
+    ### Other booking options
+
+    If you do not want to book directly through our site, you can also make your reservation using Booking.com:
+booking_alternatives_image: "images/etc/booking.com.svg"
+booking_alternatives_link: "https://www.booking.com/hotel/hu/ovaros-boutique.en.html"
 information: >
     ### THINGS TO KNOW
 
     I would like to share with you some important information about the accommodation.
 
     #### ARRIVAL AND DEPARTURE
+
+    To get into the apartment and the house, we send a **code via SMS** before arrival. The door opening code is automatically deleted at 11:00 a.m. on the day of departure.
+
     
     * • Arrival: **14:00 - 22:00**
     
@@ -23,8 +32,10 @@ information: >
 
     *Entrance is possible from the back bypassing the KUNSZT café*
 
+    *Entry to the building is possible with a door opening code at Óváros tér 2.*
 
-    * • Parking is available in the area for a fee.
+
+    * • **Parking** is available in the area **for a fee**. However, we provide **free parking** in the courtyard of the nearby **HOTEL HISTORIA** (8200 Veszprém Toborzó utca 11-13), which is monitored by an internal camera.
 
 
     * • For programs and attractions in the area and in Veszprém, contact the colleagues of the Tourinform store on the ground floor of the building, who will be happy to help.

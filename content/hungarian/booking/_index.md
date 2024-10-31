@@ -5,12 +5,21 @@ draft: false
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
 description : "Ahová elvonulhattok. Ahol befelé figyelhettek. Ahol pár napra hátra hagyhatjátok a város zaját, a rohanást, a stresszt. Várunk."
+booking_alternatives: >
+    ### Egyéb foglalási felület
+    
+    Amennyiben nem szeretne közvetlenül oldalunkon keresztül foglalni, úgy foglalását a Booking.com segítségével is intézheti:
+booking_alternatives_image: "images/etc/booking.com.svg"
+booking_alternatives_link: "https://www.booking.com/hotel/hu/ovaros-boutique.hu.html"
 information: >
     ### TUDNIVALÓK
 
     Szeretnék megosztani Önnel néhány fontos információt a szállással kapcsolatban.
 
     #### Érkezés és távozás
+
+    A lakásba és a házba történő bejutáshoz **SMS-ben küldünk kódot** az érkezés előtt. Az ajtónyitó kód a távozás napján 11.00 órakor automatikusan törli magát.
+
 
     * • Érkezés: **14:00 - 22:00 óra között**
 
@@ -21,10 +30,13 @@ information: >
     Korai érkezés és késői távozás foglaltság függvényében, előzetes egyeztetést követően lehetséges.
 
 
-    *Bejárat a hátulról a KUNSZT kávéházat megkerülve lehetséges*    
+    *Bejárat a hátulról a KUNSZT kávéházat megkerülve lehetséges*
+    
+    
+    *Az épületbe történő belépés egy kapunyitó kóddal lehetséges az Óváros tér 2 házszámnál.*
 
 
-    * • Parkolás a környéken térités ellenében vehető igénybe.
+    * • **Parkolás** a környéken **térítés ellenében** vehető igénybe. Azonban **díjmentes** parkolást biztosítunk a közelben lévő **HOTEL HISTORIA** (8200 Veszprém Toborzó utca 11-13) belső kamerával megfigyelt udvarában.
     
 
     * • A környéken és Veszprémben található programokért, látnivalókért keresse az épület földszintjén található Tourinform üzlet kollégáit akik készséggel segítenek. 
