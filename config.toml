@@ -61,8 +61,6 @@ link = "plugins/google-map/gmap.js"
 #################### default parameters ################################
 [params]
 logo = "images/logo.svg"
-# Meta data
-description = "This is meta description"
 author = "OnBaesd Group Kft."
 # contact info
 address = "8200 Veszprém, Óváros tér 2."
@@ -127,6 +125,10 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 [Languages.hu.params]
 cookie = "Ez az oldal cookie-kat használ. A weboldal használatának folytatásával Ön beleegyezik azok használatába."
 cookieAction = "Elfogadom"
+# Meta data
+[Languages.hu.params.meta]
+description = "Kényelem - Kultúra - Kikapcsolódás"
+preview = "images/etc/preview.png"
 
 ################### English navigation ####################
 
@@ -165,6 +167,10 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 [Languages.en.params]
 cookie = "This site uses cookies. By continuing to use this website, you agree to their use."
 cookieAction = "Accept"
+
+[Languages.en.params.meta]
+description = "Comfort - Culture - Relaxation"
+preview = "images/etc/preview.png"
 
 ################### English navigation ####################
 
