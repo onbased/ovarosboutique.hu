@@ -1,0 +1,23 @@
+[build]
+  publish = "public"
+  command = "hugo --minify --gc && cp -p suspended.html public/"
+  
+[build.environment]
+  HUGO_VERSION = "0.87.0"
+  HUGO_BASEURL = "/"
+
+[[headers]]
+  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+
+[headers.values]
+  X-Frame-Options = "DENY"
+  X-XSS-Protection = "1; mode=block"
+  Referrer-Policy = "same-origin"
+  Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+## This rule redirects everything to the pending page
+[[redirects]]
+  from = "/*"
+  to = "/suspended.html"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect

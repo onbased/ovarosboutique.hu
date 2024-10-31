@@ -1,0 +1,118 @@
+################################# Slider #####################################
+slider:
+  enable: true
+  bg_image: "images/banner/banner-1.jpg"
+  slider_item:
+    # slider item loop
+    - title: "ÓVÁROS BOUTIQUE"
+      title2: "Kényelem - Kultúra - Kikapcsolódás"
+      content: "Veszprém gyönyörű óvárosának szívében található, egyedi, művészi festéssel díszített csöndes kis apartmanunk tökéletes elvonulóhely a pároknak, de kényelmével, vadonatúj berendezésével, jól felszerelt konyhájával tökéletes választás az egyedül utazó üzletemberek számára is."
+      # content_image: "booking_score.png"
+      animation_in: "left"
+      animation_out: "right"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Lefoglalom"
+        link: "booking/"
+
+############################## about ##################################
+about:
+  enable: true
+  about_item:
+    # about item loop
+    - title: "Veszprémi utazást tervez, melyhez szállást keres? Megtalálta!"
+      content: >
+        Az Óváros Boutique - Veszprém kellős közepén, az Óváros téren található, nálunk nem marketing fogás a „minden egy karnyújtásnyira” kifejezés: a veszprémi Vár, a Hősök Kapuja, a Tűztorony, a Dubniczay Palota, a Szent Mihály Székesegyház 2 perc sétával elérhető. Az Óváros tér Veszprém lüktető szíve. Az Európa kulturális fővárosává választott Veszprém, a közeli Bakony és Balaton sok-sok lehetőséget tartogat, és az apartman ideális kiindulópont ahhoz, hogy a környék számos éttermében, dizájn kávézójában, vagy lenyűgöző múzeumában kényeztessük magunkat. Fesztivál Veszprémben? Túra a Bakonyban? Síelés Eplényben? Balatoni fürdés, bobozás, borkóstoló? Vagy csak kényelem és lazítás kettesben a king size méretű ágyon, ahonnan a legújabb Netflix sorozatról sem kell lemaradnunk?
+        
+
+        A választás az Önöké...
+        
+        
+        Várjuk szeretettel!
+      image: "images/backgrounds/page-about.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Lefoglalom"
+        link: "booking/"
+
+    # about item loop
+    - title: "Szállásról"
+      content: >
+        Nagy gonddal, modern dizájn szerint rendeztük be a lakás minden helyiségét, egyedi falfestmény minden szobában:
+
+
+        • Kényelmes, kétszemélyes hálószoba, king size méretű franciaágy
+
+
+        • Teljesen felszerelt konyha
+
+
+        • Zuhanykabinos fürdőszoba várja az ide érkezőket
+
+
+        • **Okos zár:** érkezzen és távozzon kényelmesen, érintésmentesen
+        
+
+        • Hűtő-fűtő klíma
+
+
+        • Ingyenes wifi
+
+
+        • Okos TV készülék több mint 100 csatornával
+        
+        
+        • **Netflix**, Youtube
+        
+        
+        • Széf
+        
+        
+        • Gyermekbarát szállás: bekészítés kívánság szerint
+
+      image: "images/backgrounds/page-accomodation.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Lefoglalom"
+        link: "booking/"
+
+    # about item loop
+    - title: "Felszereltség"
+      content: >
+        **Konyhában:**
+        Evő- és tálalóeszközök, kombinált tűzhely, hűtőszekrény, mikróhullámú sütő, mosogatógép, Nespresso kávégép, kávé- és tea bekészítés, vízforraló, kenyérpirító, teljes konyhai felszerelés
+        
+        
+        **Fürdőszobában:**
+        LED tükör, puha törölközők és kilépő, hajszárító, mosógép, törölközőszárító, WC külön helyiségben
+      image: "images/backgrounds/page-equipment.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Lefoglalom"
+        link: "booking/"
+
+    # about item loop
+    - title: "Az Óváros Boutique-ot Önnek ajánljuk, ha"
+      content: >
+        • Az ellátásról (reggeli, ebéd, vacsora) szeret Ön gondoskodni saját ízlése szerint. Ehhez nyújt segítséget teljesen felszerelt konyhánk és étkezőnk.
+
+
+        • Intim módon elvonulna kicsit a zsongó hétköznapokból. A be- és kijelentkezés valamint a zárak működtetése ugyanis mobilapplikáció segítségével történik. A vendéglátók természetesen szükség esetén telefonon elérhetőek, de a helyszínen nem szükséges személyesen is találkozni velük.
+
+
+        • Fontos Önnek a belváros és a látnivalók közelsége.
+      image: "images/backgrounds/page-ambient.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Lefoglalom"
+        link: "booking/"
+
+  button:
+    enable: true
+    label: "Lefoglalom"
+    link: "booking/"

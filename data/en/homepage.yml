@@ -1,0 +1,117 @@
+################################# Slider #####################################
+slider:
+  enable: true
+  bg_image: "images/banner/banner-1.jpg"
+  slider_item:
+    # slider item loop
+    - title: "ÓVÁROS BOUTIQUE"
+      title2: "Comfort - Culture - Relaxation"
+      content: "Located in the heart of the beautiful old town of Veszprém, our quiet charming apartment, decorated with unique, artistic painting, is the perfect retreat for couples, but with its comfort, brand new furnishings, and well-equipped kitchen, it is also an exquisite choice for businessmen traveling alone."
+      # content_image: "booking_score.png"
+      animation_in: "left"
+      animation_out: "right"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Book now"
+        link: "booking/"
+
+############################## about ##################################
+about:
+  enable: true
+  about_item:
+    # about item loop
+    - title: "Are you planning a trip to Veszprém and looking for accommodation? You found it!"
+      content: >
+        Our aristocratic apartment - Óváros Boutique - is located right in the middle of Veszprém, on Óváros tér, the expression „everything is within arm's reach” is not a marketing ploy: the Veszprém Castle, the Heroes' Gate, the Fire Tower, Dubniczay Palace, St. Michael's Cathedral are a 2-minute walk away available. Óváros tér is the beating heart of Veszprém. Veszprém, which was chosen as Europe's cultural capital, and the nearby Bakony and Balaton offer many opportunities, and the apartment is an ideal starting point for pampering yourself in the many restaurants, design cafes, or fascinating museums of the area. Festival in Veszprém? A hike in Bakony? Skiing in Eplény? Balaton swimming, bobsledding, wine tasting? Or just comfort and relaxation for two on the king-size bed, from which we don't have to miss the latest Netflix series?
+        
+        
+        The choice is yours...
+        
+        
+        We look forward to seeing you!
+      image: "images/backgrounds/page-about.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Book now"
+        link: "booking/"
+
+    # about item loop
+    - title: "About accommodation"
+      content: >
+        We furnished every room of the apartment with great care and modern design, unique mural in every room:
+
+
+        • Comfortable double bedroom, king size double bed
+
+
+        • Fully equipped kitchen
+
+
+        • Bathroom with a shower cabin awaits those who come here
+
+        • **Smart lock:** arrive and leave conveniently, contact-free
+        
+        
+        • Cooling-heating air conditioning
+        
+        
+        • Free wifi 
+        
+        
+        • Smart TV device with more than 100 channels
+        
+        
+        • **Netflix**, Youtube
+        
+        
+        • Safe box
+
+
+        • Child-friendly accommodation: preparation as desired
+
+      image: "images/backgrounds/page-accomodation.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Book now"
+        link: "booking/"
+
+    # about item loop
+    - title: "Equipment"
+      content: >
+        **Kitchen:**
+        Cutlery, combined stove, fridge, microwave oven, dishwasher, Nespresso coffee machine, coffee and tea preparation, kettle, toaster, full kitchen equipment
+
+
+        **Bathcroom:**
+        LED mirror, soft towels and exit, hair dryer, washing machine, towel dryer, WC in a separate room
+      image: "images/backgrounds/page-equipment.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Book now"
+        link: "booking/"
+
+    # about item loop
+    - title: "We recommend the Óváros Boutique to you if"
+      content: >
+        • You like to take care of the food (breakfast, lunch, dinner) according to your own taste. Our fully equipped kitchen and dining room will help you with this.
+
+
+        • You would retreat a little from the hectic everyday life in an intimate way. The check-in and check-out and the operation of the locks are done with the help of a mobile application. The caterers are of course available by phone if necessary, but it is not necessary to meet them in person on-site.
+
+
+        • Proximity to the city center and attractions is important to you.
+      image: "images/backgrounds/page-ambient.png"
+      # available animation : left, right, up, down
+      button:
+        enable: true
+        label: "Book now"
+        link: "booking/"
+
+  button:
+    enable: true
+    label: "Book now"
+    link: "booking/"
