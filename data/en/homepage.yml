@@ -22,7 +22,7 @@ modal:
   title: "Our Special Offer!"
   action: "Close"
   image: "images/etc/MBH_SZEP_Kartya.png"
-  expiration_minutes: "1"
+  expiration_minutes: "30"
   message: >
     Start the year with us and spend a few unforgettable winter days in Veszprém!
 

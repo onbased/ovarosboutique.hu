@@ -22,7 +22,7 @@ modal:
   title: "Akciós ajánlatunk!"
   action: "Bezár"
   image: "images/etc/MBH_SZEP_Kartya.png"
-  expiration_minutes: "1"
+  expiration_minutes: "30"
   message: >
     Kezdje velünk az évet, töltsön Veszprémben néhány felejthetetlen téli napot!
 
