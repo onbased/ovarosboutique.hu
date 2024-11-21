@@ -20,9 +20,8 @@
       </div>
       <div class="col-lg-5 content">
         {{ .Content }}
-        <!-- <a href="tel:{{ site.Params.mobile }}" class="text-color h5 d-block">{{ site.Params.mobile }}</a> -->
-        <a href="mailto:{{ site.Params.email }}" class="mb-5 text-color h5 d-block">{{ site.Params.email }}</a>
-        <p>{{ site.Params.address | markdownify }}</p>
+        <a href="mailto:{{ site.Params.email }}" class="text-color h5 d-block">{{ site.Params.email }}</a>
+        <a href="tel:{{ site.Params.mobile }}" class="mb-5 text-color h5 d-block">{{ site.Params.mobile }}</a>
       </div>
     </div>
     <div class="row">

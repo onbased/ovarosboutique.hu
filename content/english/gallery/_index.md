@@ -4,7 +4,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Where you can retire. Where they could look inside. Where you can leave the city noise, rush, and stress behind for a few days. We wait."
+description : "A place to retreat. Where you can turn inward. Where you can leave behind the noise of the city, the rush, and the stress for a few days. We warmly welcome you!"
 # Gallery images
 galleryFolder: "images/gallery/"
 ---

@@ -16,6 +16,22 @@ slider:
         label: "Book now"
         link: "booking/"
 
+############################## modal ##################################
+modal:
+  enable: true
+  title: "Our Special Offer!"
+  action: "Close"
+  image: "images/etc/MBH_SZEP_Kartya.png"
+  expiration_minutes: "1"
+  message: >
+    Start the year with us and spend a few unforgettable winter days in Veszprém!
+
+
+    Book with us and take advantage of a **20% discount** on the total booking price as part of the „SZÉP in Every Season” campaign for arrivals between **January 5, 2025 - February 28, 2025**, if you **pay with a SZÉP card**. The discount is also available if the service fee is not fully paid with the SZÉP card.
+
+
+    For more details, feel free to contact us through any of our contact channels.
+  
 ############################## about ##################################
 about:
   enable: true
@@ -116,3 +132,18 @@ about:
     enable: true
     label: "Book now"
     link: "booking/"
+
+
+############################## about ##################################
+reviews:
+  enable: true
+  title: "Reviews"
+  image: "images/etc/booking.com_2.svg"
+  review_item:
+    # review item loop
+    - author: "Schiffer"
+      review: Ideális elhelyezkedés, minden fontos szolgáltatás és látnivaló gyalogosan elérhető, de a lakás csendes, mert egy kis utcában található. A lakás stílusosan berendezett, jól felszerelt, ragyogó tisztaság, az ágy nagyon kényelmes. Tetszett a különleges falfestés és az üdvözlőajándék is. Plusz pont jár az intelligens zárnak, remek megoldás, amivel teljesen önállóan érkezhetsz és távozhatsz.
+      origin_flag: "de"
+      origin: "Germany"
+      score: "10.0"
+      

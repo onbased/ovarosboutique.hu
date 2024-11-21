@@ -266,3 +266,15 @@
 }
 
 /* /footer */
+
+.booking-score {
+  background-color: #003580;
+  width: 5em;
+  height: 3.5em;
+  border-top-left-radius: .75rem!important;
+  border-top-right-radius: .75rem!important;
+  border-bottom-right-radius: .75rem!important;
+  h3 {
+    margin-bottom: unset;
+  }
+}

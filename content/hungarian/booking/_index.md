@@ -4,7 +4,7 @@ draft: false
 # page title background image
 bg_image: "images/backgrounds/page-title.jpg"
 # meta description
-description : "Ahová elvonulhattok. Ahol befelé figyelhettek. Ahol pár napra hátra hagyhatjátok a város zaját, a rohanást, a stresszt. Várunk."
+description : "Ahová elvonulhat. Ahol befelé figyelhet. Ahol pár napra maga mögött hagyhatja a város zaját, a rohanást, a stresszt. Szeretettel várjuk!"
 booking_alternatives: >
     ### Egyéb foglalási felület
     
@@ -66,4 +66,5 @@ information: >
     ##### Kellemes időtöltést kívánok!
 ---
 
-Csak bátorítani tudunk, hogy fordulj hozzánk bizalommal és írd meg nekünk bármilyen óhaj-sóhajod, kérésed, kérdésed van. Ígérjük, mindent megteszünk azért, hogy segítsünk neked.
+Jelezze nálunk foglalási szándékát, és garantáljuk, hogy a legjobb árat kapja.
+Foglalását azonnal visszaigazoljuk!

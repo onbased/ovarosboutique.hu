@@ -11,7 +11,7 @@
   translation: feliratkozom
 
 - id: contact_us
-  translation: Írj nekünk
+  translation: Írjon nekünk
 
 - id: booking_title
   translation: Foglaljon nálunk
@@ -23,16 +23,16 @@
   translation: Feliratkozom
 
 - id: enter_email
-  translation: Email címem…
+  translation: Email cím…
 
 - id: your_name
   translation: Neved
 - id: your_email
-  translation: Email címed
+  translation: Email cím
 - id: subject
   translation: Tárgy
 - id: your_message
-  translation: Üzeneted számunkra
+  translation: Üzenet számunkra
 
 - id: links
   translation: linkek

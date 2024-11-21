@@ -16,6 +16,22 @@ slider:
         label: "Lefoglalom"
         link: "booking/"
 
+############################## modal ##################################
+modal:
+  enable: true
+  title: "Akciós ajánlatunk!"
+  action: "Bezár"
+  image: "images/etc/MBH_SZEP_Kartya.png"
+  expiration_minutes: "1"
+  message: >
+    Kezdje velünk az évet, töltsön Veszprémben néhány felejthetetlen téli napot!
+
+
+    Foglaljon nálunk, és **2025. január 5. - 2025. február 28.** közötti érkezés esetén a „Minden évszakban SZÉP” kampányhoz csatlakozva a teljes **foglalás árából 20% kedvezményt** biztosítunk, ha **SZÉP kártyával fizet**. A kedvezményt abban az esetben is megadjuk, amennyiben a szolgáltatás díját nem teljes egészében SZÉP kártyával egyenlíti ki.
+
+
+    További részletekért keressen minket elérhetőségeink bármelyikén.
+
 ############################## about ##################################
 about:
   enable: true
@@ -23,8 +39,11 @@ about:
     # about item loop
     - title: "Veszprémi utazást tervez, melyhez szállást keres? Megtalálta!"
       content: >
-        Az Óváros Boutique - Veszprém kellős közepén, az Óváros téren található, nálunk nem marketing fogás a „minden egy karnyújtásnyira” kifejezés: a veszprémi Vár, a Hősök Kapuja, a Tűztorony, a Dubniczay Palota, a Szent Mihály Székesegyház 2 perc sétával elérhető. Az Óváros tér Veszprém lüktető szíve. Az Európa kulturális fővárosává választott Veszprém, a közeli Bakony és Balaton sok-sok lehetőséget tartogat, és az apartman ideális kiindulópont ahhoz, hogy a környék számos éttermében, dizájn kávézójában, vagy lenyűgöző múzeumában kényeztessük magunkat. Fesztivál Veszprémben? Túra a Bakonyban? Síelés Eplényben? Balatoni fürdés, bobozás, borkóstoló? Vagy csak kényelem és lazítás kettesben a king size méretű ágyon, ahonnan a legújabb Netflix sorozatról sem kell lemaradnunk?
-        
+        Az Óváros Boutique Veszprém történelmi belvárosának központjában, a Vár lábánál, az Óváros téren található, valóra váltva a „minden egy karnyújtásnyira” vágyát: a veszprémi Vár, a Hősök Kapuja, a Tűztorony, a Dubniczay Palota, a Szent Mihály Székesegyház pár perc sétával elérhető.
+
+
+        Az Óváros tér a város lüktető szíve. Az Európa kulturális fővárosává választott Veszprém, a közeli Bakony és Balaton sok-sok lehetőséget tartogat, és az apartman ideális kiindulópont ahhoz, hogy a környék számos éttermében, dizájn kávézójában, vagy lenyűgöző múzeumában kényeztessük magunkat. Fesztivál Veszprémben? Túra a Bakonyban? Síelés Eplényben? Balatoni fürdés, bobozás, borkóstoló? Vagy csak kényelem és lazítás kettesben a king size méretű ágyon, ahonnan a legújabb Netflix sorozatról sem kell lemaradnunk?
+
 
         A választás az Önöké...
         
@@ -116,3 +135,18 @@ about:
     enable: true
     label: "Lefoglalom"
     link: "booking/"
+
+
+############################## about ##################################
+reviews:
+  enable: true
+  title: "Vélemények"
+  image: "images/etc/booking.com_2.svg"
+  review_item:
+    # review item loop
+    - author: "Schiffer"
+      review: Ideális elhelyezkedés, minden fontos szolgáltatás és látnivaló gyalogosan elérhető, de a lakás csendes, mert egy kis utcában található. A lakás stílusosan berendezett, jól felszerelt, ragyogó tisztaság, az ágy nagyon kényelmes. Tetszett a különleges falfestés és az üdvözlőajándék is. Plusz pont jár az intelligens zárnak, remek megoldás, amivel teljesen önállóan érkezhetsz és távozhatsz.
+      origin_flag: "de"
+      origin: "Németország"
+      score: "10.0"
+      

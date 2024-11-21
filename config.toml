@@ -64,8 +64,9 @@ logo = "images/logo.svg"
 author = "OnBaesd Group Kft."
 # contact info
 address = "8200 Veszprém, Óváros tér 2."
-#mobile = "+36703963170"
+mobile = "+36302062409"
 email = "ovarosboutique@gmail.com"
+
 # contact form action
 # NOTE:
 # Later maybe
@@ -92,8 +93,8 @@ mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this co
 [params.map]
 enable = true
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-map_latitude = "47.0937617"
-map_longitude = "17.9061054"
+map_latitude = "47.0939402"
+map_longitude = "17.9062295"
 map_marker = "images/marker.png" # marker size 37*55 px
 
 # cookies
@@ -125,6 +126,10 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 [Languages.hu.params]
 cookie = "Ez az oldal cookie-kat használ. A weboldal használatának folytatásával Ön beleegyezik azok használatába."
 cookieAction = "Elfogadom"
+
+terms_and_conds_title = "ASZF"
+terms_and_conds = "files/aszf.pdf"
+
 # Meta data
 [Languages.hu.params.meta]
 description = "Kényelem - Kultúra - Kikapcsolódás"
@@ -149,10 +154,25 @@ name = "Foglalás"
 url = "booking/"
 weight = 3
   
+#[[Languages.hu.menu.main]]
+#name = "Szolgáltatásaink"
+#url = "services/"
+#weight = 4
+#
+#[[Languages.hu.menu.main]]
+#name = "Felszereltség"
+#url = "Equipments/"
+#weight = 5
+#
+#[[Languages.hu.menu.main]]
+#name = "Bakancslista"
+#url = "attractions/"
+#weight = 6
+
 [[Languages.hu.menu.main]]
 name = "Kapcsolat"
 url = "contact/"
-weight = 4
+weight = 7
 
 ################################### English language #####################################
 [Languages.en]
@@ -168,6 +188,9 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 cookie = "This site uses cookies. By continuing to use this website, you agree to their use."
 cookieAction = "Accept"
 
+terms_and_conds_title = "Terms & Conditions"
+terms_and_conds = "files/aszf.pdf"
+
 [Languages.en.params.meta]
 description = "Comfort - Culture - Relaxation"
 preview = "images/etc/preview.png"
@@ -180,7 +203,6 @@ name = "Main"
 url = "/"
 weight = 1
 
-# main menu
 [[Languages.en.menu.main]]
 name = "Gallery"
 url = "gallery/"
@@ -192,7 +214,22 @@ name = "Booking"
 url = "booking/"
 weight = 3
 
+#[[Languages.en.menu.main]]
+#name = "Services"
+#url = "services/"
+#weight = 4
+#
+#[[Languages.en.menu.main]]
+#name = "Equipments"
+#url = "equipments/"
+#weight = 5
+#
+#[[Languages.en.menu.main]]
+#name = "Bucket list"
+#url = "attractions/"
+#weight = 6
+
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 4
+weight = 7

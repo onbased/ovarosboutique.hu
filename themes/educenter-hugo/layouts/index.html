@@ -2,6 +2,45 @@
 
 {{ $data := index site.Data site.Language.Lang }}
 
+{{ if $data.homepage.modal.enable }}
+{{ with $data.homepage.modal }}
+<script>
+  $(document).ready(function () {
+    console.log(document.cookie);
+    if (document.cookie.indexOf("ModalShown=true")<0) {
+        $("#modal-msg").modal("show");
+        // var expiration = new Date(+new Date() + (parseInt({{ .expiration_minutes }}) * 60)).toGMTString();
+        var expiration = parseInt({{ .expiration_minutes }}) * 60;
+        var expiration_cookie = `ModalShown=true; max-age=${expiration}; path=/`;
+        document.cookie = expiration_cookie;
+    }
+});
+</script>
+<div id="modal-msg" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLargeModalLabel">{{ .title | markdownify }}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex">
+          <img class="mx-auto img-fluid w-50" src="{{ .image | absURL }}" alt="{{ .title | markdownify }}">
+        </div>
+        <p>{{ .message | markdownify }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">{{ .action }}</button>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ end }}
+
 <!-- hero slider -->
 {{ if $data.homepage.slider.enable }}
 {{ with $data.homepage.slider }}
@@ -92,7 +131,7 @@ background-color: antiquewhite;
 padding: 8rem 2rem; -->
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
-<section class="section bg-gray ">
+<section class="section bg-gray">
   <div class="container">
     {{ range .about_item }}
     {{ $.Scratch.Add "i" 1 }}
@@ -136,6 +175,71 @@ padding: 8rem 2rem; -->
 {{ end }}
 {{ end }}
 <!-- /about us -->
+
+{{ if $data.homepage.reviews.enable }}
+{{ with $data.homepage.reviews }}
+<section class="section bg-gray">
+  <div class="container mb-5">
+    <p>
+      {{ with .image }}
+      <img class="img-fluid" width="124" src="{{ . | absURL }}" alt="reviews image">
+      {{ end }}
+      <h2 class="section-title">{{ .title }}</h2>
+    <p>
+    <div class="hero-slider">
+      {{ $.Scratch.Set "multiHeroPages" 0}}
+      {{ $.Scratch.Set "index" 0}}
+
+      {{ if gt (len .review_item) 3 }}
+      {{ $.Scratch.Set "multiHeroPages" 1}}
+      {{ end }}
+      {{ $multiHeroPages := $.Scratch.Get "multiHeroPages" }}
+
+      {{ range .review_item }}
+      {{ $index := $.Scratch.Get "index" }}
+
+        {{ if modBool $index 3 }}
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+        {{ end }}
+          
+          <!-- slider card item -->
+          <div class="col-md-4">
+            <div class="card"
+            
+            {{ if eq $multiHeroPages 1 }}
+             data-animation-out="fadeOutLeft" data-delay-out="5"
+            {{ end }}
+
+             data-duration-in=".3" data-animation-in="fadeInRight" data-delay-in=".1">
+              <div class="card-header">
+                <div class="booking-score d-flex align-content-center justify-content-center"><h3 class="text-white align-self-center">{{ .score }}</h3></div>
+              </div>
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>"{{ .review }}"</p>
+                  <footer class="blockquote-footer">{{ .author }} <cite title="Source Title"><span class="fi fi-{{ .origin_flag }}"></span> {{ .origin }}</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <!-- END slider card item -->
+      
+        {{ if modBool $index 3 }}
+        </div>
+      </div>
+      <!-- END slider item -->
+        {{ end }}
+      
+      {{ $.Scratch.Add "index" 1 }}
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
 
 <!-- courses -->
 {{ if $data.homepage.course.enable }}

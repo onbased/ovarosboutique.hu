@@ -64,5 +64,4 @@ information: >
     ##### Have a nice time!
 ---
 
-Let us know your intention to book, and we guarantee you'll receive the best price.  
-Your reservation will be confirmed immediately!
+We can only encourage you to contact us with confidence and write us any wish, request, or question you have. We promise we will do our best to help you.
