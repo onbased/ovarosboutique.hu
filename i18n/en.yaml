@@ -37,6 +37,10 @@
 - id: your_message
   translation: Your Message
 
+
+- id: thankyou_message
+  translation: Thank you, we will contact you soon!
+
 - id: links
   translation: links
 

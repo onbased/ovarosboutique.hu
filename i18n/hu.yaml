@@ -34,6 +34,10 @@
 - id: your_message
   translation: Üzenete számunkra
 
+
+- id: thankyou_message
+  translation: Köszönjük, hamarosan felvesszük Önnel a kapcsolatot!
+
 - id: links
   translation: linkek
 

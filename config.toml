@@ -73,7 +73,7 @@ email = "ovarosboutique@gmail.com"
 # NOTE:
 # Later maybe
 # https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/README.md
-contact_form_action = "mailto:ovarosboutique@gmail.com" # contact form works with https://formspree.io
+contact_form_action = "https://script.google.com/macros/s/AKfycbw5l416cf5R5Lhs6ZfgBVUM9MhUuCn0GD2b4Uf5NwMVBeb28RsBmq3sjwOHTYzd_xTJ/exec"
 # Google Analitycs
 google_analitycs_id = "" # your id
 # top header

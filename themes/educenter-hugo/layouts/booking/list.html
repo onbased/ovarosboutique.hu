@@ -10,11 +10,29 @@
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="GET" target="_top">
+        <form class="gform" action="{{ site.Params.contact_form_action | safeURL }}" method="POST" target="_top">
           <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="{{ i18n "your_email" }}">
           <textarea name="body" id="message" class="form-control mb-3" placeholder="{{ i18n "your_message" }}"></textarea>
           <button type="submit" value="send" class="btn btn-primary">{{ i18n "booking" }}</button>
         </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="thankYouMessageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{ i18n "thankyou_message" }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col-lg-5 content">
         {{ .Content }}
