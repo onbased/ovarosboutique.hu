@@ -31,9 +31,9 @@
           <!-- logo -->
           <a class="logo-footer" href="{{ site.BaseURL | relLangURL }}"><img class="img-fluid mb-4" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
           <ul class="list-unstyled">
-            <li class="mb-4">{{ site.Params.address | markdownify }}</li>
+            <li class="mb-4"><a href="{{ site.Params.address_link }}" class="text-color d-block">{{ site.Params.address }}</a></li>
             <li class="mb-4">{{ site.Params.email | markdownify }}</li>
-            <li class="mb-4">{{ site.Params.mobile | markdownify }}</li>
+            <li class="mb-4"><a href="tel:{{ site.Params.mobile }}" class="text-color d-block">{{ site.Params.mobile }}</a></li>
             <li class="mb-4"><a class="text-color" href="{{ site.Params.terms_and_conds | absURL }}">{{ site.Params.terms_and_conds_title }}</a></li>
           </ul>
         </div>

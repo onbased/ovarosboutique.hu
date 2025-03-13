@@ -6,8 +6,6 @@ assetDir = "assets"
 baseURL = "https://ovarosboutique.hu"
 title = "Óváros Boutique | Elegancia Veszprém szívében"
 theme = [ "educenter-hugo", "hugo-shortcode-gallery"]
-# post pagination
-paginate = "6"
 # post excerpt
 summaryLength = "10"
 # disqus short name
@@ -15,6 +13,9 @@ summaryLength = "10"
 # disable language
 disableLanguages = [] # desable language from here
 defaultContentLanguage = "hu"
+
+[pagination]
+pagerSize = "6"
 
 ############################# Plugins ##############################
 
@@ -64,6 +65,7 @@ logo = "images/logo.svg"
 author = "OnBaesd Group Kft."
 # contact info
 address = "8200 Veszprém, Óváros tér 2."
+address_link = "https://maps.app.goo.gl/44AgSmjzUcJuWvcg9"
 mobile = "+36302062409"
 email = "ovarosboutique@gmail.com"
 
@@ -127,8 +129,8 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 cookie = "Ez az oldal cookie-kat használ. A weboldal használatának folytatásával Ön beleegyezik azok használatába."
 cookieAction = "Elfogadom"
 
-terms_and_conds_title = "ASZF"
-terms_and_conds = "files/aszf.pdf"
+terms_and_conds_title = "Adatvédelem"
+terms_and_conds = "files/adatvedelem.pdf"
 
 # Meta data
 [Languages.hu.params.meta]
@@ -149,30 +151,38 @@ url = "gallery/"
 weight = 2
 
 [[Languages.hu.menu.main]]
+name = "Információk"
+weight = 3
+hasChildren = true
+
+    [[Languages.hu.menu.main]]
+    parent = "Információk"
+    name = "Szolgáltatásaink"
+    url = "services/"
+    weight = 1
+    
+    [[Languages.hu.menu.main]]
+    parent = "Információk"
+    name = "Felszereltség"
+    url = "equipments/"
+    weight = 2
+    
+    [[Languages.hu.menu.main]]
+    parent = "Információk"
+    name = "Látnivalók"
+    url = "attractions/"
+    weight = 3
+
+[[Languages.hu.menu.main]]
 name = "Foglalás"
 # url = "https://www.airbnb.hu/rooms/685373647444239102"
 url = "booking/"
-weight = 3
-  
-#[[Languages.hu.menu.main]]
-#name = "Szolgáltatásaink"
-#url = "services/"
-#weight = 4
-#
-#[[Languages.hu.menu.main]]
-#name = "Felszereltség"
-#url = "Equipments/"
-#weight = 5
-#
-#[[Languages.hu.menu.main]]
-#name = "Bakancslista"
-#url = "attractions/"
-#weight = 6
+weight = 4
 
 [[Languages.hu.menu.main]]
 name = "Kapcsolat"
 url = "contact/"
-weight = 7
+weight = 5
 
 ################################### English language #####################################
 [Languages.en]
@@ -188,11 +198,11 @@ copyright = "Copyright &copy; 2024 by [OnBased Group](https://onbased.com)"
 cookie = "This site uses cookies. By continuing to use this website, you agree to their use."
 cookieAction = "Accept"
 
-terms_and_conds_title = "Terms & Conditions"
-terms_and_conds = "files/aszf.pdf"
+terms_and_conds_title = "Privacy Policy"
+terms_and_conds = "files/adatvedelem.pdf"
 
 [Languages.en.params.meta]
-description = "Comfort - Culture - Relaxation"
+description = "Comfort - Culture - Chill"
 preview = "images/etc/preview.png"
 
 ################### English navigation ####################
@@ -209,27 +219,35 @@ url = "gallery/"
 weight = 2
 
 [[Languages.en.menu.main]]
+name = "Information"
+weight = 3
+hasChildren = true
+
+    [[Languages.en.menu.main]]
+    parent = "Information"
+    name = "Services"
+    url = "services/"
+    weight = 1
+    
+    [[Languages.en.menu.main]]
+    parent = "Information"
+    name = "Equipments"
+    url = "equipments/"
+    weight = 2
+    
+    [[Languages.en.menu.main]]
+    parent = "Information"
+    name = "Attractions"
+    url = "attractions/"
+    weight = 3
+
+[[Languages.en.menu.main]]
 name = "Booking"
 # url = "https://www.airbnb.hu/rooms/685373647444239102"
 url = "booking/"
-weight = 3
-
-#[[Languages.en.menu.main]]
-#name = "Services"
-#url = "services/"
-#weight = 4
-#
-#[[Languages.en.menu.main]]
-#name = "Equipments"
-#url = "equipments/"
-#weight = 5
-#
-#[[Languages.en.menu.main]]
-#name = "Bucket list"
-#url = "attractions/"
-#weight = 6
+weight = 4
 
 [[Languages.en.menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 5

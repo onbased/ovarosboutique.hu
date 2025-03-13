@@ -18,7 +18,7 @@ slider:
 
 ############################## modal ##################################
 modal:
-  enable: true
+  enable: false
   title: "Akciós ajánlatunk!"
   action: "Bezár"
   image: "images/etc/MBH_SZEP_Kartya.png"
@@ -40,15 +40,9 @@ about:
     - title: "Veszprémi utazást tervez, melyhez szállást keres? Megtalálta!"
       content: >
         Az Óváros Boutique Veszprém történelmi belvárosának központjában, a Vár lábánál, az Óváros téren található, valóra váltva a „minden egy karnyújtásnyira” vágyát: a veszprémi Vár, a Hősök Kapuja, a Tűztorony, a Dubniczay Palota, a Szent Mihály Székesegyház pár perc sétával elérhető.
-
-
-        Az Óváros tér a város lüktető szíve. Az Európa kulturális fővárosává választott Veszprém, a közeli Bakony és Balaton sok-sok lehetőséget tartogat, és az apartman ideális kiindulópont ahhoz, hogy a környék számos éttermében, dizájn kávézójában, vagy lenyűgöző múzeumában kényeztessük magunkat. Fesztivál Veszprémben? Túra a Bakonyban? Síelés Eplényben? Balatoni fürdés, bobozás, borkóstoló? Vagy csak kényelem és lazítás kettesben a king size méretű ágyon, ahonnan a legújabb Netflix sorozatról sem kell lemaradnunk?
-
-
-        A választás az Önöké...
         
         
-        Várjuk szeretettel!
+        Az Óváros Boutique Apartman személyes odafigyeléssel, egy családi vállalkozás valódi vendégszeretetével várja.
       image: "images/backgrounds/page-about.png"
       # available animation : left, right, up, down
       button:
@@ -58,83 +52,36 @@ about:
 
     # about item loop
     - title: "Szállásról"
-      content: >
-        Nagy gonddal, modern dizájn szerint rendeztük be a lakás minden helyiségét, egyedi falfestmény minden szobában:
-
-
-        • Kényelmes, kétszemélyes hálószoba, king size méretű franciaágy
-
-
-        • Teljesen felszerelt konyha
-
-
-        • Zuhanykabinos fürdőszoba várja az ide érkezőket
-
-
-        • **Okos zár:** érkezzen és távozzon kényelmesen, érintésmentesen
-        
-
-        • Hűtő-fűtő klíma
-
-
-        • Ingyenes wifi
-
-
-        • Okos TV készülék több mint 100 csatornával
-        
-        
-        • **Netflix**, Youtube
-        
-        
-        • Széf
-        
-        
-        • Gyermekbarát szállás: bekészítés kívánság szerint
-
       image: "images/backgrounds/page-accomodation.png"
       # available animation : left, right, up, down
       button:
         enable: true
         label: "Lefoglalom"
         link: "booking/"
-
-    # about item loop
-    - title: "Felszereltség"
       content: >
-        **Konyhában:**
-        Evő- és tálalóeszközök, kombinált tűzhely, hűtőszekrény, mikróhullámú sütő, mosogatógép, Nespresso kávégép, kávé- és tea bekészítés, vízforraló, kenyérpirító, teljes konyhai felszerelés
+        Az Óváros Boutique-ot Önnek ajánljuk, ha szeretné
         
         
-        **Fürdőszobában:**
-        LED tükör, puha törölközők és kilépő, hajszárító, mosógép, törölközőszárító, WC külön helyiségben
-      image: "images/backgrounds/page-equipment.png"
-      # available animation : left, right, up, down
-      button:
-        enable: true
-        label: "Lefoglalom"
-        link: "booking/"
+        • a zsúfolt hétköznapokat maga mögött hagyni. Okos zárunk lehetővé teszi, hogy érkezése és távozása kényelmes, rugalmas, érintésmentes legyen, a king size méretű ágyon pedig teljes kényelemben élvezheti a pihenést.
+
+        
+        • a belváros, a látnivalók közelségét csendes, nyugodt helyen élvezni. A legfontosabb szolgáltatások, nevezetességek, programhelyszínek könnyű sétával elérhetőek. Felejtse el az autót, a tömegközlekedést.
+        
+        
+        • ellátását (reggeli, ebéd, vacsora) saját ízlése szerint megoldani. Ehhez kiváló segítséget nyújt felszerelt konyhánk, és az apartman közvetlen szomszédságában található számos étterem, divatos kávézó és cukrászda.
 
     # about item loop
-    - title: "Az Óváros Boutique-ot Önnek ajánljuk, ha"
-      content: >
-        • Az ellátásról (reggeli, ebéd, vacsora) szeret Ön gondoskodni saját ízlése szerint. Ehhez nyújt segítséget teljesen felszerelt konyhánk és étkezőnk.
-
-
-        • Intim módon elvonulna kicsit a zsongó hétköznapokból. A be- és kijelentkezés valamint a zárak működtetése ugyanis mobilapplikáció segítségével történik. A vendéglátók természetesen szükség esetén telefonon elérhetőek, de a helyszínen nem szükséges személyesen is találkozni velük.
-
-
-        • Fontos Önnek a belváros és a látnivalók közelsége.
+    - title: "Kalandozás"
       image: "images/backgrounds/page-ambient.png"
-      # available animation : left, right, up, down
       button:
         enable: true
         label: "Lefoglalom"
         link: "booking/"
+      content: >
+        Az Óváros tér a város lüktető szíve. Az Európa kulturális fővárosává választott Veszprém, a közeli Bakony és Balaton sok-sok lehetőséget tartogat, és az apartman ideális kiindulópont ahhoz, hogy a környék számos éttermében, dizájn kávézójában, vagy lenyűgöző múzeumában kényeztessük magunkat. Fesztivál Veszprémben? Túra a Bakonyban? Síelés Eplényben? Balatoni fürdés, bobozás, borkóstoló? Vagy csak kényelem és lazítás kettesben a king size méretű ágyon, ahonnan a legújabb Netflix sorozatról sem kell lemaradnunk?
 
-  button:
-    enable: true
-    label: "Lefoglalom"
-    link: "booking/"
+
+        A választás az Önöké...
 
 
 ############################## about ##################################
@@ -148,5 +95,35 @@ reviews:
       review: Ideális elhelyezkedés, minden fontos szolgáltatás és látnivaló gyalogosan elérhető, de a lakás csendes, mert egy kis utcában található. A lakás stílusosan berendezett, jól felszerelt, ragyogó tisztaság, az ágy nagyon kényelmes. Tetszett a különleges falfestés és az üdvözlőajándék is. Plusz pont jár az intelligens zárnak, remek megoldás, amivel teljesen önállóan érkezhetsz és távozhatsz.
       origin_flag: "de"
       origin: "Németország"
+      score: "10.0"
+    
+    - author: "Réka"
+      review: Abszolút minden! A design, a minőség, a kedvesség, az elhelyezkedés, az ár, a felszereltség, a parkolás, a wifi, a welcome drink, a bekészített kávé, tea, a rengeteg apró figyelmesség, például esernyő, minden tökéletes! Veszprémben csak itt fogok megszállni, ha újra jövök.
+      origin_flag: "hu"
+      origin: "Magyarország"
+      score: "10.0"
+    
+    - author: "István"
+      review: Az apartman a történelmi városközpont szívében található, amely egyedi varázsát adja. Veszprémben minden látnivaló gyalog elérhető.
+      origin_flag: "hu"
+      origin: "Magyarország"
+      score: "9.0"
+
+    - author: "Dávid"
+      review: Tisztaság,fogadtatás. Rendben volt minden,nagyon kedves szállásadó.
+      origin_flag: "hu"
+      origin: "Magyarország"
+      score: "10.0"
+    
+    - author: "János"
+      review: Elképesztően csodás az apartman. Igényes és gondosan válogatott kiegészítők a lakás minden pontján. A felszereltség maximális!
+      origin_flag: "hu"
+      origin: "Magyarország"
+      score: "10.0"
+    
+    - author: "Krisztina"
+      review: Gyönyörű apartmant varázsoltál, nagyon ízléses, otthonos, illatos, kényelmes, kedves szállás.
+      origin_flag: "hu"
+      origin: "Magyarország"
       score: "10.0"
       

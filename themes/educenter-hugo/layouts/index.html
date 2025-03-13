@@ -48,48 +48,48 @@
   <div class="container">
     <div class="hero-slider mt-5">
       <!-- slider item -->
+      {{ $.Scratch.Set "multiHeaderHeroPages" 0}}
+
       {{ if gt (len .slider_item) 1 }}
+      {{ $.Scratch.Set "multiHeaderHeroPages" 1}}
+      {{ end }}
+      {{ $multiHeaderHeroPages := $.Scratch.Get "multiHeaderHeroPages" }}
+
       {{ range .slider_item }}
       <div class="hero-slider-item">
         <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-white" data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5"
-              data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".1">{{ .title |
-              markdownify }}</h1>
-            <h6 class="text-muted mb-4" data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5"
-              data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".4">{{ .content
-              | markdownify }}</h6>
+          <div class="col-12 col-lg-6">
+            <h1 class="text-white"
+            {{ if eq $multiHeaderHeroPages 1 }}
+              data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5"
+            {{ end }}
+              data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".1">
+              {{ .title | markdownify }}
+            </h1>
+            <h3 class="text-white"
+            {{ if eq $multiHeaderHeroPages 1 }}
+              data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5"
+            {{ end }}
+              data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".3">
+              {{ .title2 | markdownify }}
+            </h3>
+            <p class="text-muted mb-4"
+            {{ if eq $multiHeaderHeroPages 1 }}
+              data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5"
+            {{ end }}
+              data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".5">
+              {{ .content | markdownify }}
+            </p>
             {{ if .button.enable }}
             <a href="{{ .button.link | absLangURL }}" class="btn btn-primary"
-              data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5" data-duration-in=".3"
+            {{ if eq $multiHeaderHeroPages 1 }}
+              data-animation-out="fadeOut{{.animation_out | title }}" data-delay-out="5" data-duration-in=".7"
+            {{ end }}
               data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".7">{{ .button.label }}</a>
             {{ end }}
           </div>
         </div>
       </div>
-      {{ end }}
-      {{ else }}
-      {{ range .slider_item }}
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="text-white" data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}"
-              data-delay-in=".1">{{ .title |
-              markdownify }}</h1>
-            <h3 class="text-white mb-5" data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}"
-              data-delay-in=".1">{{ .title2 |
-              markdownify }}</h3>
-            <p class="text-muted mt-5 mb-4" data-duration-in=".3" data-animation-in="fadeIn{{.animation_in | title }}"
-              data-delay-in=".4">{{ .content | markdownify }}</p>
-
-            {{ if .button.enable }}
-            <a href="{{ .button.link | absLangURL }}" class="btn btn-primary mt-5" data-duration-in=".3"
-              data-animation-in="fadeIn{{.animation_in | title }}" data-delay-in=".7">{{ .button.label }}</a>
-            {{ end }}
-          </div>
-        </div>
-      </div>
-      {{ end }}
       {{ end }}
     </div>
   </div>
@@ -138,7 +138,7 @@ padding: 8rem 2rem; -->
     {{ $i := $.Scratch.Get "i" }}
     <div class="row align-items-center mb-5 pb-5">
       {{ if modBool $i 2 }}
-      <div class="about-text bg-gray col-md-6 order-1 order-md-1">
+      <div class="about-text bg-gray col-lg-6 order-2 order-lg-1">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
@@ -148,17 +148,17 @@ padding: 8rem 2rem; -->
         {{ end }}
       </div>
       {{ with .image }}
-      <div class="col-md-6 order-2 order-md-2 mb-4 mb-md-0">
+      <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
         <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
       </div>
       {{ end }}
       {{ else }}
       {{ with .image }}
-      <div class="col-md-6 order-1 order-md-1 mb-4 mb-md-0">
+      <div class="col-lg-6 order-1 order-lg-1 mb-4 mb-lg-0">
         <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
       </div>
       {{ end }}
-      <div class="about-text bg-gray col-md-6 order-2 order-md-2">
+      <div class="about-text bg-gray col-lg-6 order-2 order-lg-2">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
@@ -199,17 +199,19 @@ padding: 8rem 2rem; -->
       {{ $index := $.Scratch.Get "index" }}
 
         {{ if modBool $index 3 }}
+          {{ if gt $index 0 }}
+          </div></div>
+          {{ end }}
       <!-- slider item -->
-      <div class="hero-slider-item">
-        <div class="row">
+      <div class="hero-slider-item"><div class="row">
         {{ end }}
           
           <!-- slider card item -->
-          <div class="col-md-4">
-            <div class="card"
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+            <div class="card my-3"
             
             {{ if eq $multiHeroPages 1 }}
-             data-animation-out="fadeOutLeft" data-delay-out="5"
+             data-animation-out="fadeOutLeft" data-delay-out="6"
             {{ end }}
 
              data-duration-in=".3" data-animation-in="fadeInRight" data-delay-in=".1">
@@ -225,13 +227,7 @@ padding: 8rem 2rem; -->
             </div>
           </div>
           <!-- END slider card item -->
-      
-        {{ if modBool $index 3 }}
-        </div>
-      </div>
       <!-- END slider item -->
-        {{ end }}
-      
       {{ $.Scratch.Add "index" 1 }}
       {{ end }}
 

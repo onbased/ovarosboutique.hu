@@ -11,9 +11,7 @@
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
         <form action="{{ site.Params.contact_form_action | safeURL }}" method="GET" target="_top">
-          <!--<input type="text" class="form-control mb-3" id="name" name="name" placeholder="{{ i18n "your_name" }}">-->
           <input type="email" class="form-control mb-3" id="mail" name="email" placeholder="{{ i18n "your_email" }}">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="{{ i18n "subject" }}">
           <textarea name="body" id="message" class="form-control mb-3" placeholder="{{ i18n "your_message" }}"></textarea>
           <button type="submit" value="send" class="btn btn-primary">{{ i18n "send" }}</button>
         </form>
@@ -22,7 +20,7 @@
         {{ .Content }}
         <a href="mailto:{{ site.Params.email }}" class="text-color h5 d-block">{{ site.Params.email }}</a>
         <a href="tel:{{ site.Params.mobile }}" class="mb-5 text-color h5 d-block">{{ site.Params.mobile }}</a>
-        <p>{{ site.Params.address | markdownify }}</p>
+        <a href="{{ site.Params.address_link }}" class="mb-5 text-color h5 d-block">{{ site.Params.address }}</a>
       </div>
     </div>
   </div>

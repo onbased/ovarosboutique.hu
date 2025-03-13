@@ -32,7 +32,7 @@
 - id: subject
   translation: Tárgy
 - id: your_message
-  translation: Üzenet számunkra
+  translation: Üzenete számunkra
 
 - id: links
   translation: linkek
